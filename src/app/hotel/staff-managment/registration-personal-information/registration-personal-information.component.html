@@ -1,0 +1,116 @@
+<div class="overflow">
+    <div  id="floor-master" class="pt-1 pb-4">
+      <div class="margin-x-card">
+     <div class="icon-registration">
+        <div class="icon-out">
+        <div class="icon-in">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <h6 class="s1">Basic Details</h6>
+        </div>
+        <div class="icon-out">
+        <div class="icon-in">
+            <i class="fa-solid fa-file-invoice"></i>
+        </div>
+        <h6 class="s1">Document Detail</h6>
+        </div>
+        <div class="icon-out">
+        <div class="icon-in">
+            <i class="fa-regular fa-image"></i>
+        </div>
+        <h6 class="s1">Photo/ signature</h6>
+        </div>
+     </div>
+     </div>
+        <div class="card details_section margin-x-card">
+         
+            <div class="card-body card-form">
+              <span class="text-size">Personal information <hr/></span>
+          
+              <form [formGroup]="addregistration">
+                <div id="di">
+                <div class="di">
+                    <p>
+                        <mat-form-field appearance="fill" class="t">
+                          <mat-label>Full Name</mat-label>
+                          <input matInput type="text" placeholder="Enter full name..." formControlName="full_name">
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field appearance="fill" class="t">
+                          <mat-label>Father Name</mat-label>
+                          <input matInput  placeholder="Enter father name..." formControlName="father_name">
+                        </mat-form-field>
+                      </p>
+                      <mat-form-field appearance="fill" class="t1">
+                        <mat-label>Gender</mat-label>
+                        <mat-select disableRipple formControlName="gender">
+                          <mat-option>select Gender</mat-option>
+                          <mat-option value="1">Male</mat-option>
+                          <mat-option value="2">Female</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                 
+                   <p>
+                    <mat-form-field appearance="fill" class="t">
+                      <mat-label>Addher Number</mat-label>
+                      <input matInput type="number" placeholder="Enter addher number..." formControlName="addher_number">
+                    </mat-form-field>
+                  </p>
+                  <p>
+                    <mat-form-field appearance="fill" class="t">
+                      <mat-label>Pan Card</mat-label>
+                      <input matInput  placeholder="Enter pan card..." formControlName="pan_card">
+                    </mat-form-field>
+                  </p>
+               
+                </div>
+                <div class="di">
+                    <p>
+                        <mat-form-field appearance="fill" class="t">
+                          <mat-label>Mother Name</mat-label>
+                          <input matInput placeholder="Enter mother name..." formControlName="mother_name">
+                        </mat-form-field>
+                      </p>
+
+                      <p>
+                        <mat-form-field appearance="fill" class="t">
+                          <mat-label>Email Id</mat-label>
+                          <input matInput type="email" placeholder="Enter employee email..." formControlName="email_id">
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field appearance="fill" class="t">
+                          <mat-label>Mobile Number</mat-label>
+                          <input matInput type="number" placeholder="Enter mobile number..." formControlName="mobail_number">
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field appearance="fill" class="t">
+                          <mat-label>Working Experience</mat-label>
+                          <input matInput type="number" placeholder="Enter working experience..." formControlName="working_experience">
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field appearance="fill" class="t">
+                          <mat-label>Full Address</mat-label>
+                          <input matInput placeholder="Enter mobile number..." formControlName="full_address">
+                        </mat-form-field>
+                      </p>
+                
+                </div>
+            
+            </div>
+                <input type="submit" value="Next  →" [routerLink]="['/registration-document-detail']" (click)="handleaddregistration()"   class="btn x" >
+              </form>
+            </div>
+            
+          </div>
+         
+       
+           </div>
+      </div>
+      
+      
+      
+    

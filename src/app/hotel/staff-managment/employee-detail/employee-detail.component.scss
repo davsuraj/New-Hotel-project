@@ -1,0 +1,115 @@
+.overflow{
+    height:87.6vh;
+    background-color: #f2f3f5;
+}
+.outer{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    color: black;
+    overflow-y: auto;
+}
+.card{
+    padding:5px;
+    overflow-x: auto;
+}
+span{
+  margin-block-end: 2px;
+}
+.Details{
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+}
+.Details-left{
+    width: 50%;
+    display: flex;
+}
+.Details-right{
+    width: 50%;
+    display: flex;
+}
+.name{
+    width: 50%;
+    font-weight: bold;
+}
+.names{
+    width: 50%;
+}
+.document{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.documents-box{
+    height: 300px;
+    width: 21%;
+    margin:15px 0px;
+}
+.pic{
+    height: 85%;
+    width: 100%;
+  border: 1px solid black;
+}
+.content{
+    height: 15%;
+    width: 100%;
+    padding-top: 12px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    background-color:#D9b08c;
+}
+.x{
+    background-color: #D9b08c;
+    width: 150px;
+    color: white;
+    padding: 5px ;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .documents-box {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .Details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Details-left,
+    .Details-right {
+        width: 100%;
+    }
+    .documents-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .outer {
+        padding: 15px;
+    }
+    .Details {
+        padding: 30px 0;
+    }
+    .documents-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 15px;
+    }
+    .content {
+        font-size: 18px;
+    }
+    .x {
+        width: 100px;
+        padding: 3px;
+    }
+}

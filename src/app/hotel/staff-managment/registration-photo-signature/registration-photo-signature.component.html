@@ -1,0 +1,69 @@
+<div class="overflow">
+  <div  id="floor-master" class="pt-1 pb-4">
+    <div class="margin-x-card">
+    <div class="icon-registration">
+      <div class="icon-out">
+      <div class="icon-in">
+          <i class="fa-solid fa-user"></i>
+      </div>
+      <h6 class="s1">Basic Details</h6>
+      </div>
+      <div class="icon-out">
+      <div class="icon-in">
+          <i class="fa-solid fa-file-invoice"></i>
+      </div>
+      <h6 class="s1">Document Detail</h6>
+      </div>
+      <div class="icon-out">
+      <div class="icon-in">
+          <i class="fa-regular fa-image"></i>
+      </div>
+      <h6 class="s1">Photo/ signature</h6>
+      </div>
+   </div>
+   </div>
+         <div class="card details_section margin-x-card">
+          
+             <div class="card-body card-form">
+               <span class="text-size">Photo/Signature <hr/></span>
+           
+               <form [formGroup]="add_photo_sing">
+                <div id="di">
+                <div class="di">
+                 <h4>Photo</h4>
+                   <div class="photo"></div>
+             
+                     <input type="file" class="form-control mt-4" formControlName="photo"/>
+                 
+                </div>
+                <div class="di">
+                 <h4>Signature</h4>
+                 <div class="photo"></div>
+                
+                 <input type="file"  class="form-control mt-4" formControlName="signature"/>
+               
+                </div>
+            
+            </div>
+            <div class="requrment-content">
+            <ul>
+             <li>you can uplode .jpg .png formet,</li>
+             <li>Each document must be less then 10 MB</li>
+            </ul>
+            </div>
+                <input type="submit" value="← Previous " [routerLink]="['/documentdetail']" class="btn x" >
+                <input type="submit" (click)="handleaddregistration_detail()" value="Submit" [routerLink]="['/documentdetail']" class="btn x x-left" >
+              </form>
+             </div>
+             
+           </div>
+          
+        
+            </div>
+            </div>
+       
+       
+       
+       
+     
+  

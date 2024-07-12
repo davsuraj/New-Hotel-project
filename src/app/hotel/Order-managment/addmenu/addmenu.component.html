@@ -1,0 +1,53 @@
+
+
+   <div class="overflow">
+    <div id="floor-master" class="py-4">
+      <div class="card details_section margin-x-card">
+        <div class="card-body card-form">
+          <span class="text-size">Add Menu <hr/></span>
+          <form [formGroup]="addmenuForm">
+            <div id="di">
+              <div class="di">
+                <p>
+                  <mat-form-field appearance="fill" class="t">
+                    <mat-label>Food Name</mat-label>
+                    <input matInput placeholder="Enter Food name..." formControlName="Food_Name">
+                  </mat-form-field>
+                </p>
+                <p>
+                  <mat-form-field appearance="fill" class="t">
+                    <mat-label>Food Category</mat-label>
+                    <input matInput placeholder="Enter Food Category..." formControlName="Food_Category">
+                  </mat-form-field>
+                </p>
+              </div>
+              <div class="di">
+                <mat-form-field appearance="fill" class="t">
+                  <mat-label>Food Type</mat-label>
+                  <mat-select disableRipple formControlName="Food_Type">
+                    <mat-option>select food type</mat-option>
+                    <mat-option value="1">Veg</mat-option>
+                    <mat-option value="2">Non-Veg</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <p>
+                  <mat-form-field appearance="fill" class="t">
+                    <mat-label>Half Price</mat-label>
+                    <input matInput type="number" placeholder="Enter half price..." formControlName="Half_Price">
+                  </mat-form-field>
+                </p>
+                <p>
+                  <mat-form-field appearance="fill" class="t">
+                    <mat-label>Full Price</mat-label>
+                    <input matInput type="number" placeholder="Enter full price..." formControlName="Full_Price">
+                  </mat-form-field>
+                </p>
+              </div>
+            </div>
+            <input type="submit" value="Add" (click)="handleAddmenu()" [routerLink]="['/tablemanagement']" class="btn x">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,52 @@
+<div class="overflow">
+<section class="details_section mt-4 margin-card">
+  <div class="card-body card-form ">
+    <span class="text-size">Add Table<hr/></span>
+
+    <form [formGroup]="addTableForm">
+      <div id="di">
+      <div class="di">
+        <p>
+          <mat-form-field appearance="fill" class="t">
+            <mat-label>Table Name</mat-label>
+            <input matInput placeholder="Enter table name..." formControlName="table_name">
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="fill" class="t">
+            <mat-label>Table Capactiy</mat-label>
+            <input matInput placeholder="Enter table capactiy..." formControlName="floor_name">
+          </mat-form-field>
+        </p>
+        
+      </div>
+      <div class="di">
+        <p>
+          <mat-form-field appearance="fill" class="t">
+            <mat-label>Floor Name</mat-label>
+            <input matInput placeholder="Enter floor name..." formControlName="table_capacity">
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field appearance="fill" class="t">
+            <mat-label>Floor Code</mat-label>
+            <input matInput placeholder="Enter floor code..." formControlName="floor_code">
+          </mat-form-field>
+        </p>
+         
+      </div>
+  
+  </div>
+      <button type="submit" (click)="handleAddTable()" class="btn x" >Add Table</button>
+    </form>
+  </div>
+
+</section>
+</div>
+
+
+  
+  
+  
+  

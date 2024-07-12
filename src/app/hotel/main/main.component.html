@@ -1,0 +1,174 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" [mode]="drawerMode" [(opened)]="opened">
+        <div *ngIf="!showFiller && !isSmallScreen">
+            <ul class="navbar-nav sidebar-bacground_icon sidebar sidebar-dark accordion pt-0" id="accordionSidebar">
+
+                <!-- Sidebar - Brand -->
+                <a class="sidebar-brand d-flex align-items-center  p-0" href="index.html">
+                    <div class="sidebar-brand-icon ">
+                        <!-- <i class="fas fa-laugh-wink"></i> -->
+                        <img src="../../../assets/img/Black_and_White_Illustrative_Home_Catering_Logo-removebg-preview.png"
+                            style="height: 50px;width: 50px;">
+                    </div>
+
+                </a>
+
+                <mat-divider></mat-divider>
+                <!-- Nav Item - Dashboard -->
+
+                <div class="menu_list_icon mt-2">
+
+                    <li class="nav-item" [routerLink]="['/dashboard']">
+                        <a class="nav-link" (click)="onLinkClick('Dashboard')">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" [routerLink]="['/sitingmanagment']">
+                        <a class="nav-link" (click)="onLinkClick('Setting Managment')">
+                            <i class="fas fa-solid fa-wrench"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" [routerLink]="['/bookin-gmanagment']">
+                        <a class="nav-link " (click)="onLinkClick('Booking Managment')">
+                            <i class="fas fa-solid fa-blender"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" [routerLink]="['/order-managment']">
+                        <a class="nav-link " (click)="onLinkClick('Order Managment')">
+                            <i class="fas fa-solid fa-book-open-reader"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" [routerLink]="['/sttaf-managment']">
+                        <a class="nav-link " (click)="onLinkClick('Sttaf Managment')">
+                            <i class="fas fa-solid fa-users"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" [routerLink]="['/inventory-managment']">
+                        <a class="nav-link " (click)="onLinkClick('Inventory Managment')">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" [routerLink]="['/dashbord']">
+                        <a class="nav-link " (click)="onLinkClick('Guest Managment')">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                        </a>
+                    </li>
+
+                </div>
+
+                <!-- Divider -->
+                <!-- <hr class="sidebar-divider"> -->
+
+                <!-- Divider -->
+                <hr class="sidebar-divider d-none d-md-block">
+
+                <!-- Sidebar Toggler (Sidebar) -->
+                <div class="text-center d-none d-md-inline">
+                    <button class="hide_show_btn" (click)="showFiller = !showFiller" mat-mini-fab>
+                        <mat-icon>keyboard_arrow_left</mat-icon>
+                    </button>
+                </div>
+
+            </ul>
+        </div>
+
+        <div *ngIf="showFiller">
+            <ul class="navbar-nav sidebar-bacground sidebar sidebar-dark accordion pt-0" id="accordionSidebar">
+
+                <!-- Sidebar - Brand -->
+                <a class="sidebar-brand d-flex align-items-center  p-0" href="index.html">
+                    <div class="sidebar-brand-icon ">
+                        <!-- <i class="fas fa-laugh-wink"></i> -->
+                        <img src="../../../assets/img/Black_and_White_Illustrative_Home_Catering_Logo-removebg-preview.png"
+                            style="height: 50px;width: 50px;">
+                    </div>
+                    <div class="sidebar-brand-text mx-2 ">jivu restorent</div>
+
+                </a>
+
+                <mat-divider></mat-divider>
+                <!-- Nav Item - Dashboard -->
+
+                <div class="menu_list mt-2">
+
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="onLinkClick('Dashboard')">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span class="font-sizes" [routerLink]="['/dashboard']">Dashboard</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="onLinkClick('Setting Managment')">
+                            <i class="fas fa-solid fa-wrench"></i>
+                            <span class="font-sizes" [routerLink]="['/sitingmanagment']">Setting Managment</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="onLinkClick('Booking Managment')">
+                            <i class="fas fa-solid fa-blender"></i>
+                            <span class="font-sizes" [routerLink]="['/bookin-gmanagment']">Booking Managment</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="onLinkClick('Order Managment')">
+                            <i class="fas fa-solid fa-book-open-reader"></i>
+                            <span class="font-sizes" [routerLink]="['/order-managment']">Order Managment</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="onLinkClick('Sttaf Managment')">
+                            <i class="fas fa-solid fa-users"></i>
+                            <span class="font-sizes" [routerLink]="['/sttaf-managment']">Sttaf Managment</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="onLinkClick('Inventory Managment')">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span class="font-sizes" [routerLink]="['/inventory-managment']">Inventory
+                                Managment</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " (click)="onLinkClick('Guest Managment')">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span class="font-sizes" [routerLink]="['/dashbord']">Guest Managment</span></a>
+                    </li>
+
+                </div>
+
+                <!-- Divider -->
+                <!-- <hr class="sidebar-divider"> -->
+
+                <!-- Divider -->
+                <hr class="sidebar-divider d-none d-md-block">
+
+                <!-- Sidebar Toggler (Sidebar) -->
+                <div class="text-center d-none d-md-inline">
+                    <button class="hide_show_btn" (click)="showFiller = !showFiller" mat-mini-fab>
+                        <mat-icon>keyboard_arrow_left</mat-icon>
+                    </button>
+                </div>
+
+            </ul>
+        </div>
+        <!-- <button (click)="showFiller = !showFiller" mat-raised-button>
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </button> -->
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <div class="example-events">
+            <div id="content-wrapper" class="d-flex flex-column" style="overflow-y: hidden;">
+                <!-- Main Content -->
+                <!-- <button mat-button (click)="toggleDrawer()">Toggle Drawer</button> -->
+                <div id="content" class="j1">
+                    <app-topbar></app-topbar>
+                </div>
+                <div>
+                    <button class="mob_sibebar" (click)="toggleDrawer()" mat-fab>
+                        <i class="fa fa-bars"></i>
+                        <!-- <mat-icon>keyboard_arrow_left</mat-icon> -->
+                    </button>
+                    <app-index></app-index>
+                </div>
+            </div>
+        </div>
+    </mat-drawer-content>
+
+</mat-drawer-container>

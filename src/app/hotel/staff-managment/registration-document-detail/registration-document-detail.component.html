@@ -1,0 +1,68 @@
+<div class="overflow">
+    <div  id="floor-master" class="pt-1 pb-4">
+        <div class="margin-x-card">
+        <div class="icon-registration">
+            <div class="icon-out">
+            <div class="icon-in">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h6 class="s1">Basic Details</h6>
+            </div>
+            <div class="icon-out">
+            <div class="icon-in">
+                <i class="fa-solid fa-file-invoice"></i>
+            </div>
+            <h6 class="s1">Document Detail</h6>
+            </div>
+            <div class="icon-out">
+            <div class="icon-in">
+                <i class="fa-regular fa-image"></i>
+            </div>
+            <h6 class="s1">Photo/ signature</h6>
+            </div>
+         </div>
+       </div>
+        
+           <div class="card details_section margin-x-card">
+            
+               <div class="card-body card-form">
+                 <span class="text-size">Documents Uplode<hr/></span>
+             
+                 <form [formGroup]="add_registration_document">
+                   <div id="di">
+                   <div class="di">
+                
+                       Addhar:
+                       <input type="file" class="form-control t" formControlName="addher">
+                       PAN Card:
+                       <input type="file" class="form-control t" formControlName="pan_card">
+                       Experience Certificate:
+                      <input type="file" class="form-control t" formControlName="experience_certificate">
+                     
+                   </div>
+                   <div class="di">
+                       10th Marksheet:
+                       <input type="file" class="form-control t" formControlName="Marksheet_ten">
+                       12th Marksheet:
+                       <input type="file" class="form-control t" formControlName="Marksheet_twelve">
+                       Degree Certificate:
+                       <input type="file" class="form-control t" formControlName="Degree_certificate">
+                    
+                   </div>
+               
+               </div>
+               <input type="submit" value="← Previous " [routerLink]="['/registration-personal-information']" class="btn x" >
+               <input type="submit" value="Next →" (click)="handleaddregistration_detail()" [routerLink]="['/registration-photo-signature']" class="btn x x-left" >
+                 </form>
+               </div>
+               
+             </div>
+            
+          
+              </div>
+         </div>
+         
+         
+         
+       
+    

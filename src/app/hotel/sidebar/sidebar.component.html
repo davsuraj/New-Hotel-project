@@ -1,0 +1,73 @@
+
+<!-- Sidebar -->
+<ul class="navbar-nav sidebar-bacground sidebar sidebar-dark accordion pt-0" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center p-0" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+             <img src="../../../assets/img/Black_and_White_Illustrative_Home_Catering_Logo-removebg-preview.png" style="height: 50px;width: 50px;">
+        </div>
+        <div class=" mx-2 ">jivu restorent</div>
+    </a>
+
+    <!-- Nav Item - Dashboard -->
+
+    <div class="menu_list mt-2">
+
+        <li class="nav-item">
+            <a class="nav-link"  [routerLink]="['/dashboard']" (click)="onLinkClick('Dashboard')">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span class="font-sizes">Dashboard</span></a>
+        </li>
+    
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/sitingmanagment']" (click)="onLinkClick('Setting Managment')">
+                <i class="fas fa-solid fa-wrench"></i>
+                <span class="font-sizes">Setting Managment</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " [routerLink]="['/bookin-gmanagment']" (click)="onLinkClick('Booking Managment')">
+                <i class="fas fa-solid fa-blender"></i>
+                <span class="font-sizes" >Booking Managment</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/order-managment']" (click)="onLinkClick('Order Managment')">
+                <i class="fas fa-solid fa-book-open-reader"></i>
+                <span class="font-sizes">Order Managment</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " [routerLink]="['/sttaf-managment']" (click)="onLinkClick('Sttaf Managment')">
+                <i class="fas fa-solid fa-users"></i>
+                <span class="font-sizes">Sttaf Managment</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " [routerLink]="['/inventory-managment']" (click)="onLinkClick('Inventory Managment')">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span class="font-sizes">Inventory Managment</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link "  [routerLink]="['/dashbord']" (click)="onLinkClick('Guest Managment')" >
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span class="font-sizes">Guest Managment</span></a>
+        </li>
+    
+    </div>
+    
+    <!-- Divider -->
+    <!-- <hr class="sidebar-divider"> -->
+
+   
+
+
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->

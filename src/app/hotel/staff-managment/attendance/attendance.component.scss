@@ -1,0 +1,59 @@
+
+
+
+
+
+.topbarx{
+    display: flex;
+    justify-content: space-between;
+}
+.t{
+    margin-bottom: 15px;
+    margin-top: 2px;
+}
+
+
+a{
+    background-color: rgb(0, 0,0,.0);
+    cursor: pointer;
+    color: #d9b08c;;
+    text-decoration: none;
+}
+.Search{
+    height: 30px;
+    width: 250px;
+    background-color: black;
+    margin-left: 48%;
+}
+
+
+th,td{
+    border: 1px solid black;
+    text-align: center;
+    color:black;
+    padding: 5px;
+}
+td input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 0;
+}
+td select{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+.td{
+    padding:0;
+}
+.icon{
+    justify-content: space-between;
+    display: flex;
+}
+
