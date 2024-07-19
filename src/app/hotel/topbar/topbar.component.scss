@@ -7,3 +7,40 @@
    //  color: var(--heading);
    color: gray;
 }
+.img{
+   width: 40px;height: 40px;
+   margin-top:15px;
+ }
+
+.nav-link i{
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+
+.Settings{
+  display: none;
+  cursor: pointer;
+}
+ @media screen and (max-width: 1200px) {
+  .nav-link i{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  }
+@media screen and (max-width: 1000px) {
+ .nav-link i{
+   margin-top: 20px;
+ }
+ }
+ @media screen and (max-width: 480px) {
+  .nav-link i{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .img{
+    margin-top:20px;
+    width: 30px;height: 30px;
+  }
+  }

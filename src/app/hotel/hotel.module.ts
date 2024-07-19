@@ -59,6 +59,11 @@ import { NgChartsModule } from 'ng2-charts';
 import { ProfileComponent } from './profile/profile.component';
 import { IndexComponent } from './index/index.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { SeatingPictureComponent } from './settings/seating-picture/seating-picture.component';
+import { BookingPictureComponent } from './settings/booking-picture/booking-picture.component';
+import { OrderPictureComponent } from './settings/order-picture/order-picture.component';
+import { SttafPictureComponent } from './settings/sttaf-picture/sttaf-picture.component';
+import { InventoryPictureComponent } from './settings/inventory-picture/inventory-picture.component';
 
 
 @NgModule({
@@ -97,6 +102,11 @@ import {MatDividerModule} from '@angular/material/divider';
     InventoryAllowTableComponent,
     ProfileComponent,
     IndexComponent,
+    SeatingPictureComponent,
+    BookingPictureComponent,
+    OrderPictureComponent,
+    SttafPictureComponent,
+    InventoryPictureComponent,
   
 ],
   imports: [

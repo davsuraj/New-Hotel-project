@@ -1,3 +1,7 @@
+// -----------------
+// Slider
+// -----------------
+
 .overflow {
     font-family: "Poppins", sans-serif;
     color: #444444;
@@ -28,6 +32,8 @@ display: none;
 .scroll-bottam{
     font-family: "Poppins", sans-serif;
     color: #444444;
+    margin: 0;
+    padding: 0;
 }
 .scroll-bottam::-webkit-scrollbar 
  {   
@@ -66,10 +72,11 @@ display: none;
     height: max-content ;
     // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;   
-    padding: 20px 10px;
+    padding:0px 0px;
     background-color: white;
     border-radius: 5px;
 }
+
 
 section{
     padding: 50px;
@@ -121,7 +128,6 @@ section{
 // form page start
 // -----------------------------------
 .overflow{
-    // height:88vh;
     background-color: #f2f3f5;
     overflow-y: auto;
     overflow-x: hidden;
@@ -133,18 +139,18 @@ section{
     background-color: #f2f3f5;
 }
 .card-form{
-    padding:10px;
+  
     background-color: white;
     color: black;
     border-radius: 5px;
-   overflow-y: auto;
+    overflow-y: auto;
 }
 #di{
     display: flex;
     justify-content: space-between;
 }
 .di{
-    width: 48%;
+    width: 49%;
 }
 .text-size{
     color:#D9b08c;
@@ -154,12 +160,12 @@ section{
 
 hr{
     color:black;
-    margin-bottom: 30px;
-    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 .t{
-    margin-bottom: 15px;
-    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .x{
     background-color: #D9b08c;
@@ -167,10 +173,12 @@ hr{
     width: 150px;
     padding: 5px 0px ;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom:0px;
 }
 .x:hover{
     background-color: #ffcb9a;
+    color: var(--white);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
    
 }
 
@@ -238,7 +246,7 @@ hr{
     justify-content: space-between;
 }
 .card-table{
-    padding:20px;
+    padding:10px;
     background:white;
     color:black;
     border-radius: 5px;
@@ -253,7 +261,7 @@ hr{
 .topbars{
     display: flex;
     justify-content: space-between; 
-    margin-top: -20px;
+    margin-top: 0px;
 }
 .topbars span{
   padding-top: 10px;
@@ -263,13 +271,14 @@ hr{
     width: 200px;
     padding: 0px 10px;
     margin-left: 20px;
+    transform: translateY(-5px);
     outline: none;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;   
 }
 .icon i{
     font-size: 25px;
-    margin-left: 30px;
+    margin-left: 20px;
     color: #d9b08c;
 }
 
@@ -289,13 +298,6 @@ hr{
     display:flex;
     justify-content: space-between;
 }
-// .Search{
-//     height: 30px;
-//     width: 250px;
-//     background-color: white;
-//     margin-left: 55%;
-//     border: 1px solid black; 
-// }
 .Search input{
  height: 100%;
  width: 88%;
@@ -308,18 +310,18 @@ hr{
    color: black;
    text-align: center;
    padding-left: 5px;
- 
 }
 .table-text-size{
     color:#D9b08c;
     font-size:25px;
     font-weight:500;
 }
-
+.table-bordered{
+   margin: 0px;
+}
 #table hr{
-    margin-top: px;
     color:black;
-    margin-bottom: 18px;
+   margin: 0px 0px 10px 0px;
  }
 
 // ------------------------------
@@ -330,7 +332,6 @@ hr{
     width: 100%;
     background: #fff;
     border-radius: px;
-    // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;   
   }
   .input-box i,
@@ -359,8 +360,22 @@ hr{
     transform: translateY(-50%) scale(0.98);
   }
 
-
-/* Media Queries */
+// ----------------
+//   seatting-text
+// ----------------
+.seatting-text{
+    font-size: 17px;
+}
+.seatting-file{
+    margin-bottom: 15px;
+    margin-top:3px;
+}
+.x-button{
+margin-top:20px;
+}
+// -------------------
+// Media Queries
+// ------------------- 
 @media (max-width: 1200px) {
     .cardst{
         height: 150px;
@@ -407,10 +422,11 @@ hr{
     }
     .nav-link{
         display: flex !important;
+    
     }
     .nav-link i{
         transform: translateY(-11px) !important;
-        margin: 0px 5px;
+        margin:0px 5px;
     }
 }
 
@@ -551,7 +567,7 @@ hr{
 
     mat-card{
         height:200px !important;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         padding: 0px;
         width: 100%;
     }
@@ -595,7 +611,7 @@ hr{
 
 
 
-    //   ---------------------------
+    //   -----------Topbar----------------
     .j1{
         height: 50px;
     }
@@ -642,5 +658,15 @@ hr{
         display: block !important;
     }
 }
+
+
+
+// ------------------------------
+// Nav-bar
+// ------------------------------
+
+
+
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

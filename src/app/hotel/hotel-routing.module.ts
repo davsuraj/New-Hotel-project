@@ -31,6 +31,11 @@ import { InventoryAddTableComponent } from './inventory/inventory-add-table/inve
 import { InventoryAllowTableComponent } from './inventory/inventory-allow-table/inventory-allow-table.component';
 import { InventoryReportComponent } from './inventory/inventory-report/inventory-report.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SeatingPictureComponent } from './settings/seating-picture/seating-picture.component';
+import { BookingPictureComponent } from './settings/booking-picture/booking-picture.component';
+import { OrderPictureComponent } from './settings/order-picture/order-picture.component';
+import { InventoryPictureComponent } from './settings/inventory-picture/inventory-picture.component';
+import { SttafPictureComponent } from './settings/sttaf-picture/sttaf-picture.component';
 
 
 
@@ -66,7 +71,13 @@ const routes: Routes = [
   {path:'inventroy-add-table',component:InventoryAddTableComponent},
   {path:'inventroy-allow-table',component:InventoryAllowTableComponent},
   {path:'inventroy-report',component:InventoryReportComponent},
-  {path:'profile',component:ProfileComponent} 
+  {path:'profile',component:ProfileComponent} ,
+  {path:'seating-picture',component:SeatingPictureComponent},
+  {path:'booking-picture',component:BookingPictureComponent},
+  {path:'order-picture',component:OrderPictureComponent},
+  {path:'sttaf-picture',component:SttafPictureComponent},
+  {path:'inventory-picture',component:InventoryPictureComponent}
+
   ]}
 ];
 
