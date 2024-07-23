@@ -64,6 +64,9 @@ import { BookingPictureComponent } from './settings/booking-picture/booking-pict
 import { OrderPictureComponent } from './settings/order-picture/order-picture.component';
 import { SttafPictureComponent } from './settings/sttaf-picture/sttaf-picture.component';
 import { InventoryPictureComponent } from './settings/inventory-picture/inventory-picture.component';
+import { HousekeepingDepartmentComponent } from './staff-managment/housekeeping-department/housekeeping-department.component';
+import { SecurityDepartmentComponent } from './staff-managment/security-department/security-department.component';
+import { FoodAndBeverageComponent } from './staff-managment/food-and-beverage/food-and-beverage.component';
 
 
 @NgModule({
@@ -107,6 +110,9 @@ import { InventoryPictureComponent } from './settings/inventory-picture/inventor
     OrderPictureComponent,
     SttafPictureComponent,
     InventoryPictureComponent,
+    HousekeepingDepartmentComponent,
+    SecurityDepartmentComponent,
+    FoodAndBeverageComponent,
   
 ],
   imports: [

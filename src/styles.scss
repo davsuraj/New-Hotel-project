@@ -124,6 +124,52 @@ section{
     transform: scale(1.03);
 }
 
+
+// ----------------------------------
+//project card
+// ----------------------------------
+.cards-background{
+    flex-wrap: wrap;
+}
+.hotel-card-icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 50% 50%;
+    background-color:rgb(122, 82, 6);
+    color: white;
+    }
+    .cards{
+       width: 100%;
+       height: 180px;
+       
+       background-color: rgb(209, 209, 214);
+       box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset !important;
+       }
+       .cards:hover{
+        transform: scale(1.03);
+        }
+    .cards .card-body{
+    justify-content: space-between;
+   
+    }
+    .cards .card-body {
+       align-items: center;
+    }
+    .cards .card-body .hotel-card-icon {
+      line-height: 70px;
+      font-size:30px;
+       text-align: center;
+       margin: 0px auto;
+       margin-bottom: 20px;
+    }
+    .cards .card-body p {
+      font-size: 20px;
+      color:rgb(122, 82, 6);
+      font-size: 30px;
+      font-weight: 500;
+     }
+    
+    
 // -----------------------------------
 // form page start
 // -----------------------------------
@@ -262,6 +308,7 @@ hr{
     display: flex;
     justify-content: space-between; 
     margin-top: 0px;
+    align-items: center;
 }
 .topbars span{
   padding-top: 10px;
@@ -331,6 +378,7 @@ hr{
     max-width: 300px;
     width: 100%;
     background: #fff;
+    transform: translateY(-5px);
     border-radius: px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;   
   }
@@ -410,7 +458,25 @@ margin-top:20px;
         margin: 0px 5px;
     }
 }
+@media (max-width: 1100px) {
+    .cards-background{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .cards{
+        width:47%  !important;
+       
+        }
+    }
 @media (max-width: 900px) {
+    .cards-background{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .cards{
+        width:48%  !important;
+       
+        }
     .cardst{
         height: 150px;
         width:30%;
@@ -519,6 +585,10 @@ margin-top:20px;
     margin:0px 5px;
 }
 
+.cards{
+    width:100% !important;
+   
+    }
 }
 
 
@@ -609,7 +679,10 @@ margin-top:20px;
         padding: 0 5px 0 25px;
       }
 
-
+      .cards{
+        width:100%;
+       
+        }
 
     //   -----------Topbar----------------
     .j1{

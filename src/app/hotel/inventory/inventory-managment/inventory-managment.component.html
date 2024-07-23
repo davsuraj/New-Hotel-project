@@ -1,14 +1,14 @@
 <div class="overflow">
- <section class="">
+ <!-- <section class="">
 
     <div class="row">
         <div class="col-md-4">
             <mat-card [routerLink]="['/inventroy-add-product']">
                 <div class="add_table">
-                    <!-- <h3>heading</h3> -->
+                   
                     <div class="card_heading" >Add Product</div>
                 </div>
-                <!-- <h3>heading</h3> -->
+             
             </mat-card>
 
         </div>
@@ -31,10 +31,10 @@
         <div class="col-md-4">
             <mat-card [routerLink]="['/inventroy-allow-table']">
                 <div class="allow_table">
-                    <!-- <h3>heading</h3> -->
+                    
                     <div class="card_heading" >Allow Product Table</div>
                 </div>
-                <!-- <h3>heading</h3> -->
+               
             </mat-card>
 
         </div>
@@ -49,5 +49,69 @@
 
 
 
-</section>
+</section> -->
+<div class="container-fluid">
+    <div class="row mt-4">
+    <div class="col-md-4 mb-3">
+        <div class="card cards text-center py-3" [routerLink]="['/inventroy-add-product']">
+            <div class="card-body">
+                <div class="hotel-card-icon">
+                    <i class="fa-solid fa-id-card-clip"></i>
+                </div>
+            <p>Add Product</p>
+           
+            </div>
+          </div> 
+    </div>
+    <div class="col-md-4 mb-3"> 
+        <div class="card cards text-center py-3" [routerLink]="['/inventroy-add-table']">
+            <div class="card-body">
+                <div class="hotel-card-icon">
+                    <i class="fa-solid fa-print"></i>
+                </div>
+            <p>Add Product Table</p>
+           
+            </div>
+          </div>  
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card cards text-center py-3" [routerLink]="['/inventroy-allow-product']">
+        <div class="card-body">
+            <div class="hotel-card-icon">
+                <i class="fa-solid fa-id-card-clip"></i>
+            </div>
+        <p>Allow Product</p>
+       
+        </div>
+       
+       
+    </div>
+    </div>
+    
+        <div class="row mt-2">
+            <div class="col-md-4 mb-3"> 
+                <div class="card cards text-center py-3" [routerLink]="['/inventroy-allow-table']">
+                    <div class="card-body">
+                        <div class="hotel-card-icon">
+                            <i class="fa-solid fa-id-card-clip"></i>
+                        </div>
+                    <p>Allow Product Table</p>
+                   
+                    </div>
+                  </div> 
+           </div>
+           <div class="col-md-4 mb-3"> 
+            <div class="card cards text-center py-3" [routerLink]="['/inventroy-report']">
+                <div class="card-body">
+                    <div class="hotel-card-icon">
+                        <i class="fa-solid fa-id-card-clip"></i>
+                    </div>
+                <p>Inventory Report </p>
+               
+                </div>
+              </div> 
+       </div>
+     </div>
+</div>
+
 </div>

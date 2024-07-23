@@ -36,6 +36,10 @@ import { BookingPictureComponent } from './settings/booking-picture/booking-pict
 import { OrderPictureComponent } from './settings/order-picture/order-picture.component';
 import { InventoryPictureComponent } from './settings/inventory-picture/inventory-picture.component';
 import { SttafPictureComponent } from './settings/sttaf-picture/sttaf-picture.component';
+import { SecurityDepartmentComponent } from './staff-managment/security-department/security-department.component';
+import { FoodAndBeverageComponent } from './staff-managment/food-and-beverage/food-and-beverage.component';
+import { HousekeepingDepartmentComponent } from './staff-managment/housekeeping-department/housekeeping-department.component';
+
 
 
 
@@ -65,6 +69,9 @@ const routes: Routes = [
   {path:'department',component:DepartmentComponent},
   {path:'department-Front-Office',component:DepartmentFrontOfficeComponent},
   {path:'employee-detail',component:EmployeeDetailComponent},
+  {path:'security-department',component:SecurityDepartmentComponent},
+  {path:'food-and-beverage',component:FoodAndBeverageComponent},
+  {path:'housekeeping-department',component:HousekeepingDepartmentComponent},
   {path:'inventory-managment',component:InventoryManagmentComponent},
   {path:'inventroy-add-product',component:InventoryAddProductComponent},
   {path:'inventroy-allow-product',component:InventoryAllowProductComponent},

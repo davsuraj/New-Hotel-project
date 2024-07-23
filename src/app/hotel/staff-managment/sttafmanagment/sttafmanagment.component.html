@@ -1,14 +1,14 @@
 <div class="overflow">
-     <section class="">
+     <!-- <section class="">
 
         <div class="row">
             <div class="col-md-4">
                 <mat-card [routerLink]="['/registration-personal-information']">
                     <div class="add_table">
-                        <!-- <h3>heading</h3> -->
+                       
                         <div class="card_heading" >Registration</div>
                     </div>
-                    <!-- <h3>heading</h3> -->
+                   
                 </mat-card>
     
             </div>
@@ -22,10 +22,10 @@
             <div class="col-md-4">
                 <mat-card [routerLink]="['/attendance']">
                     <div class="attendance">
-                        <!-- <h3>heading</h3> -->
+                        
                         <div class="card_heading" > Attendance</div>
                     </div>
-                    <!-- <h3>heading</h3> -->
+                    
                 </mat-card>
     
             </div>
@@ -43,5 +43,58 @@
     
     
     
-    </section>
+    </section> -->
+
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+             <div class="card cards text-center py-3" [routerLink]="['/add-menu']">
+            <div class="card-body">
+                <div class="hotel-card-icon">
+                    <i class="fa-solid fa-id-card-clip"></i>
+                </div>
+            <p>Add Menu</p>
+           
+            </div>
+          </div> 
+        </div>
+        <div class="col-md-4 mb-3"> 
+            <div class="card cards text-center py-3" [routerLink]="['/registration-personal-information']">
+                <div class="card-body">
+                    <div class="hotel-card-icon">
+                        <i class="fa-solid fa-id-card-clip"></i>
+                    </div>
+                <p>Registration</p>
+               
+                </div>
+              </div>  
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card cards text-center py-3" [routerLink]="['/department']">
+                <div class="card-body">
+                    <div class="hotel-card-icon">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                <p>Department</p>
+               
+                </div>
+              </div>  
+        </div>
+        </div>
+        
+            <div class="row mt-2">
+                <div class="col-md-4 mb-3"> 
+                    <div class="card cards text-center py-3" [routerLink]="['/attendance']">
+                        <div class="card-body">
+                            <div class="hotel-card-icon">
+                                <i class="fa-solid fa-id-card-clip"></i>
+                            </div>
+                        <p>Attendance</p>
+                       
+                        </div>
+                      </div> 
+               </div>
+         </div>
+    </div>
     </div>
